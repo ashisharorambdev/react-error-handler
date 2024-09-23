@@ -1,0 +1,129 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.error-boundary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.error-message {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 20px;
+
+}
+
+.sending-error {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.loading-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #666;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error-sent-successfully {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2ecc71;
+  margin-bottom: 20px;
+}
+
+.success-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #2ecc71;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.error-sent-failed {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+.failed-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.reload-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reload-button:hover {
+  background-color: #3e8e41;
+}
